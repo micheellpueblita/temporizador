@@ -80,16 +80,16 @@ function contador() {
 detener.addEventListener("click", (evento) => {
     clearInterval(repetidora);
     location.reload();
+    detener.style.backgroundColor='purple';
 });
 
 aceptar.addEventListener("click", (evento) => {
     declararImputs();
     guardarInputs();
 });
-console.log(horas)
+
 iniciar.addEventListener("click", (evento) => {
-    //if((horas == '' && minutos =='' && segundos =='') || (horas == 0 && minutos == 0 && segundos == 0) )
-        //clearInterval(repetidora);
-    //else
+    iniciar.style.backgroundColor='purple';
+    if(segundos.value!='')
         repetidor();
 });
