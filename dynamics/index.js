@@ -89,7 +89,9 @@ aceptar.addEventListener("click", (evento) => {
 });
 
 iniciar.addEventListener("click", (evento) => {
-    iniciar.style.backgroundColor='purple';
     if(segundos.value!='')
+    {
+        iniciar.style.backgroundColor='purple';
         repetidor();
+    }
 });
